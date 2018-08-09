@@ -15,7 +15,11 @@ class StarSystem
   end
 
   def get_largest_planet
-    @planets.max_by { |planet| planet.diameter}
+    @planets.max_by { |planet| planet.diameter }
+  end
+
+  def get_smallest_planet
+    @planets.min_by { |planet| planet.diameter }
   end
 
 end
