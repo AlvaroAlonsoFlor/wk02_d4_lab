@@ -10,4 +10,11 @@ class StarSystem
     @planets.map { |planet| planet.name}
   end
 
+  def get_planet_by_name(planet_name)
+    @planets.find { |planet| planet.name == planet_name }
+  end
+
+  def get_largest_planet
+  end
+
 end
